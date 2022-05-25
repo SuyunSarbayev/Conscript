@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="WeatherFragmentBinding">
+        <variable
+            name="adapter"
+            type="com.example.weather.adapter.WeatherAdapter" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textview_fragment_weather_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/project_margin_16dp"
+            android:layout_marginTop="@dimen/project_margin_8dp"
+            android:fontFamily="@font/open_sans_light"
+            android:text="Hello Suyun"
+            android:textColor="@color/white"
+            android:textSize="@dimen/project_text_size_27sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textview_fragment_weather_city_hint_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/project_margin_16dp"
+            android:layout_marginTop="@dimen/project_margin_8dp"
+            android:fontFamily="@font/open_sans_regular"
+            android:text="@string/fragment_weather_city_search_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/project_text_size_14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_fragment_weather_username" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edittext_fragment_weather_city"
+            android:layout_width="0dp"
+            android:textColorHint="@color/white"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/project_text_size_14sp"
+            android:hint="@string/fragment_weather_city_search_hint"
+            android:layout_height="@dimen/project_height_48dp"
+            android:layout_marginStart="@dimen/project_margin_16dp"
+            android:layout_marginTop="@dimen/project_margin_30dp"
+            android:layout_marginEnd="@dimen/project_margin_16dp"
+            android:background="@drawable/bg_fragment_weather_outlined_rounded"
+            android:drawableEnd="@drawable/ic_fragment_weather_search"
+            android:paddingEnd="@dimen/project_padding_margin_8dp"
+            android:paddingRight="@dimen/project_padding_margin_8dp"
+            android:paddingStart="@dimen/project_padding_margin_8dp"
+            android:paddingLeft="@dimen/project_padding_margin_8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_fragment_weather_city_hint_title" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textview_fragment_weather_locations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/project_margin_16dp"
+            android:layout_marginTop="@dimen/project_margin_100dp"
+            android:fontFamily="@font/open_sans_regular"
+            android:text="@string/fragment_weather_city_locations"
+            android:textColor="@color/white"
+            android:textSize="@dimen/project_text_size_20sp"
+            android:layout_marginBottom="@dimen/project_margin_8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/recyclerview_fragment_weather_locations" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_fragment_weather_locations"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:adapter="@{adapter}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

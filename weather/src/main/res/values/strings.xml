@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">weather</string>
+    <string name="fragment_weather_welcome">Hello $s</string>
+    <string name="fragment_weather_city_search_title">Check the weather by the city</string>
+    <string name="fragment_weather_city_locations">My locations</string>
+    <string name="fragment_weather_city_search_hint">Search city</string>
+</resources>

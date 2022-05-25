@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="project_margin_16dp">16dp</dimen>
+    <dimen name="project_margin_8dp">8dp</dimen>
+    <dimen name="project_margin_30dp">30dp</dimen>
+    <dimen name="project_text_size_12sp">12sp</dimen>
+    <dimen name="project_text_size_14sp">14sp</dimen>
+    <dimen name="project_text_size_27sp">27sp</dimen>
+    <dimen name="project_text_size_40sp">40sp</dimen>
+    <dimen name="project_text_size_20sp">20sp</dimen>
+    <dimen name="project_margin_150dp">150dp</dimen>
+    <dimen name="project_margin_100dp">100dp</dimen>
+    <dimen name="project_padding_margin_16dp">16dp</dimen>
+    <dimen name="project_padding_margin_8dp">16dp</dimen>
+    <dimen name="project_height_48dp">48dp</dimen>
+    <dimen name="project_cardview_radius_12dp">12dp</dimen>
+    <dimen name="project_cardview_elevation_12dp">12dp</dimen>
+</resources>
